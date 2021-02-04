@@ -1,0 +1,25 @@
+{
+  "name": "lab2_mocha_test",
+  "version": "1.0.0",
+  "description": "Full Stack II Lab 02",
+  "main": "app/server.js",
+  "scripts": {
+    "start": "node ./app/server.js",
+    "test": "mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evgeniya-zhukova/Lab02_mocha_test.git"
+  },
+  "author": "Evgeniya Zhukova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/evgeniya-zhukova/Lab02_mocha_test/issues"
+  },
+  "homepage": "https://github.com/evgeniya-zhukova/Lab02_mocha_test#readme",
+  "keywords": [],
+  "dependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.2.1"
+  }
+}
