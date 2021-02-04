@@ -16,7 +16,7 @@ describe("Calculator", () => {
 
     it("returns sum", (done) => {
       request(url, (error, response, body) => {
-        expect(body).to.equal("7");
+        expect(body).to.equal(7);
         done();
       });
     });
@@ -36,7 +36,7 @@ describe("Calculator", () => {
 
     it("returns sub", (done) => {
       request(url, (error, response, body) => {
-        expect(body).to.equal("3");
+        expect(body).to.equal(3);
         done();
       });
     });
@@ -56,7 +56,7 @@ describe("Calculator", () => {
 
     it("returns mul", (done) => {
       request(url, (error, response, body) => {
-        expect(body).to.equal("10");
+        expect(body).to.equal(10);
         done();
       });
     });
@@ -65,7 +65,7 @@ describe("Calculator", () => {
 
 describe("Calculator", () => {
   describe("Addition", () => {
-    var url = "http://localhost:3000/div?i=5&j=2";
+    var url = "http://localhost:3000/div?i=10&j=2";
 
     it("returns status 200", (done) => {
       request(url, (error, response, body) => {
@@ -76,7 +76,7 @@ describe("Calculator", () => {
 
     it("returns div", (done) => {
       request(url, (error, response, body) => {
-        expect(body).to.equal("5");
+        expect(body).to.equal(5);
         done();
       });
     });
