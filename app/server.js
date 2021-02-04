@@ -20,7 +20,27 @@ app.get("/sub", (req, res) => {
   var i = parseInt(req.query.i, 10);
   var j = parseInt(req.query.j, 10);
   var subs = calculator.sub(i, j);
-  res.send(JSON.stringify(subs));
+  res.send(subs);
+
+});
+
+//http://localhost:3000/mul?i=5&j=2
+app.get("/mul", (req, res) => {
+
+  var i = parseInt(req.query.i, 10);
+  var j = parseInt(req.query.j, 10);
+  var mult = calculator.mult(i, j);
+  res.send(mult);
+
+});
+
+//http://localhost:3000/div?i=10&j=2
+app.get("/div", (req, res) => {
+
+  var i = parseInt(req.query.i, 10);
+  var j = parseInt(req.query.j, 10);
+  var div = calculator.sub(i, j);
+  res.send(div);
 
 });
 
